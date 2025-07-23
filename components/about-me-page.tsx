@@ -63,7 +63,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                     isDarkMode ? "text-gray-300" : "text-gray-600"
                   } text-sm`}
                 >
-                  Building modern web applications with React, Node.js, and
+                  Building modern web applications with React, Stringboot, and
                   various databases. I enjoy creating seamless user experiences
                   backed by robust server-side architecture.
                 </p>
@@ -74,16 +74,16 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                 } p-4 rounded-lg w-full`}
               >
                 <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                  DevOps & CI/CD
+                  Linux System Administration
                 </h3>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
                   } text-sm`}
                 >
-                  Implementing automated pipelines and containerization with
-                  Docker and Kubernetes. I&apos;m passionate about streamlining
-                  development workflows and ensuring reliable deployments.
+                  Experienced with Linux basics, Git server setup, GitLab
+                  workflows, and foundational CI/CD concepts to support modern
+                  development practices.
                 </p>
               </div>
               <div
