@@ -9,8 +9,8 @@ import {
   MapPin,
   Moon,
   Sun,
-  Download,
   Mail,
+  FileUser,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -21,8 +21,6 @@ import ArchivesPage from "@/components/archives-page";
 import ProjectDetailPage from "@/components/project-detail-page";
 import { getProjectById } from "@/data/projects";
 import { useFilters } from "@/hooks/use-filters";
-import { cvData } from "@/data/cv-data";
-import { generateCVPDF, downloadPreGeneratedCV } from "@/utils/pdf-generator";
 import {
   HomeRightSidebar,
   ProjectDetailTableOfContents,
@@ -111,53 +109,8 @@ export default function PersonalPortfolio() {
     updateURL(page);
   };
 
-  const handleDownloadCV = async () => {
-    try {
-      // First try to download pre-generated PDF
-      await downloadPreGeneratedCV();
-    } catch {
-      console.log("Pre-generated PDF not available, generating new one...");
-
-      try {
-        // Fallback: Generate PDF from data
-        await generateCVPDF(cvData);
-      } catch (pdfError) {
-        console.error("Error generating PDF:", pdfError);
-
-        // Final fallback: Create text file
-        const cvText = `${cvData.personalInfo.name}
-${cvData.personalInfo.website}
-Email: ${cvData.personalInfo.email}
-Mobile: ${cvData.personalInfo.mobile}
-
-EDUCATION
-${cvData.education.institution}
-${cvData.education.degree}; GPA: ${cvData.education.gpa}
-${cvData.education.duration}
-
-PROJECTS
-${cvData.projects
-  .map((p) => `• ${p.title}: ${p.description} - ${p.githubUrl}`)
-  .join("\n")}
-
-KNOWLEDGE
-${cvData.knowledge.map((k) => `• ${k}`).join("\n")}
-
-PROGRAMMING SKILLS
-• Languages: ${cvData.programmingSkills.languages.join(", ")}
-• Technologies: ${cvData.programmingSkills.technologies.join(", ")}`;
-
-        const blob = new Blob([cvText], { type: "text/plain" });
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "Le_Tien_Thuc_CV.txt";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(url);
-      }
-    }
+  const handleDownloadCV = () => {
+    window.open("/cv/ThucResume-1.pdf", "_blank");
   };
 
   // Không render cho đến khi initialized để tránh flash
@@ -337,6 +290,7 @@ PROGRAMMING SKILLS
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                title="GitHub"
               >
                 <svg
                   className="w-4 h-4"
@@ -364,6 +318,7 @@ PROGRAMMING SKILLS
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                title="LinkedIn"
               >
                 <svg
                   className="w-4 h-4"
@@ -386,7 +341,11 @@ PROGRAMMING SKILLS
               }`}
               asChild
             >
-              <a href="mailto:letienthuc2004@gmail.com" aria-label="Email">
+              <a
+                href="mailto:letienthuc2004@gmail.com"
+                aria-label="Email"
+                title="Email"
+              >
                 <Mail className="w-4 h-4" />
               </a>
             </Button>
@@ -401,9 +360,10 @@ PROGRAMMING SKILLS
                   : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
               }`}
               onClick={handleDownloadCV}
-              aria-label="Download CV"
+              aria-label="CV"
+              title="CV"
             >
-              <Download className="w-4 h-4" />
+              <FileUser className="w-4 h-4" />
             </Button>
           </div>
 
