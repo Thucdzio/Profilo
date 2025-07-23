@@ -7,11 +7,11 @@ interface AboutMePageProps {
 
 export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl w-full mx-auto px-2 sm:px-4">
       <div
         className={`${
           isDarkMode ? "bg-gray-800" : "bg-gray-100"
-        } rounded-lg p-8`}
+        } rounded-lg p-4 sm:p-8`}
       >
         <h1 className="text-3xl font-bold mb-6">About Me</h1>
 
@@ -24,7 +24,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
             <p
               className={`${
                 isDarkMode ? "text-gray-300" : "text-gray-600"
-              } leading-relaxed mb-4`}
+              } leading-relaxed mb-4 text-base sm:text-lg`}
             >
               Hello, I&apos;m Thuc! I&apos;m a passionate Information Technology
               student at Vietnam National University, Hanoi. Currently pursuing
@@ -34,7 +34,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
             <p
               className={`${
                 isDarkMode ? "text-gray-300" : "text-gray-600"
-              } leading-relaxed`}
+              } leading-relaxed text-base sm:text-lg`}
             >
               My journey in technology started with curiosity about how things
               work behind the scenes. From building my first &quot;Hello
@@ -49,13 +49,15 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
             <h2 className="text-xl font-semibold mb-4 text-purple-400 scroll-mt-8">
               🚀 What I Do
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg`}
+                } p-4 rounded-lg w-full`}
               >
-                <h3 className="font-semibold mb-2">Full-Stack Development</h3>
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  Full-Stack Development
+                </h3>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -69,9 +71,11 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg`}
+                } p-4 rounded-lg w-full`}
               >
-                <h3 className="font-semibold mb-2">DevOps & CI/CD</h3>
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  DevOps & CI/CD
+                </h3>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -85,9 +89,11 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg`}
+                } p-4 rounded-lg w-full`}
               >
-                <h3 className="font-semibold mb-2">Machine Learning & MLOps</h3>
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  Machine Learning & MLOps
+                </h3>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -101,9 +107,11 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg`}
+                } p-4 rounded-lg w-full`}
               >
-                <h3 className="font-semibold mb-2">Research & Innovation</h3>
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  Research & Innovation
+                </h3>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -127,7 +135,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <p
                 className={`${
                   isDarkMode ? "text-gray-300" : "text-gray-600"
-                } mb-4`}
+                } mb-4 text-base sm:text-lg`}
               >
                 Technologies I&apos;ve worked with in my projects:
               </p>
@@ -156,7 +164,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg mt-4`}
+                } p-4 rounded-lg mt-4 w-full`}
               >
                 <p
                   className={`${
@@ -195,9 +203,11 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg border-l-4 border-purple-400`}
+                } p-4 rounded-lg border-l-4 border-purple-400 w-full`}
               >
-                <h3 className="font-semibold mb-2">Short-term Goals (2025)</h3>
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
+                  Short-term Goals (2025)
+                </h3>
                 <ul
                   className={`list-disc list-inside ${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -220,9 +230,9 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg border-l-4 border-blue-400`}
+                } p-4 rounded-lg border-l-4 border-blue-400 w-full`}
               >
-                <h3 className="font-semibold mb-2">
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
                   Medium-term Goals (2025-2027)
                 </h3>
                 <ul
@@ -252,9 +262,9 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
               <div
                 className={`${
                   isDarkMode ? "bg-gray-700" : "bg-gray-200"
-                } p-4 rounded-lg border-l-4 border-green-400`}
+                } p-4 rounded-lg border-l-4 border-green-400 w-full`}
               >
-                <h3 className="font-semibold mb-2">
+                <h3 className="font-semibold mb-2 text-base sm:text-lg">
                   Long-term Vision (5+ years)
                 </h3>
                 <ul
@@ -284,15 +294,17 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
           <section
             className={`${
               isDarkMode ? "bg-gray-700" : "bg-gray-200"
-            } p-6 rounded-lg mt-8`}
+            } p-6 rounded-lg mt-8 w-full`}
           >
-            <h3 className="font-semibold mb-3 text-purple-400">💡 Fun Facts</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <h3 className="font-semibold mb-3 text-purple-400 text-base sm:text-lg">
+              💡 Fun Facts
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
-                  } text-sm mb-2`}
+                  } text-sm mb-2 text-base sm:text-lg`}
                 >
                   <strong>Favorite Quote:</strong> &quot;If you know, you
                   know.&quot; - It&apos;s all about the journey of discovery.
@@ -300,7 +312,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
-                  } text-sm`}
+                  } text-sm text-base sm:text-lg`}
                 >
                   <strong>When I&apos;m not coding:</strong> I enjoy reading
                   tech blogs, playing chess, and exploring new coffee shops in
@@ -311,7 +323,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
-                  } text-sm mb-2`}
+                  } text-sm mb-2 text-base sm:text-lg`}
                 >
                   <strong>Learning Philosophy:</strong> Every bug is a learning
                   opportunity, every project is a chance to grow.
@@ -319,7 +331,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
-                  } text-sm`}
+                  } text-sm text-base sm:text-lg`}
                 >
                   <strong>Dream Project:</strong> Building an AI-powered
                   platform that helps students in Vietnam access quality

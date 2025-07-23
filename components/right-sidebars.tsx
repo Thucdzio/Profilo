@@ -42,7 +42,7 @@ export function HomeRightSidebar({
     <>
       {/* Clear Filters */}
       {hasActiveFilters && (
-        <div className="mb-6">
+        <div className="mb-6 px-2 sm:px-4">
           <Button
             variant="outline"
             size="sm"
@@ -56,7 +56,7 @@ export function HomeRightSidebar({
       )}
 
       {/* Archives */}
-      <div className="mb-8">
+      <div className="mb-8 px-2 sm:px-4">
         <h3 className="text-lg font-semibold mb-4 flex items-center">
           <Archive className="w-5 h-5 mr-2" />
           FILTER BY YEAR
@@ -89,7 +89,7 @@ export function HomeRightSidebar({
       </div>
 
       {/* Categories */}
-      <div className="mb-8">
+      <div className="mb-8 px-2 sm:px-4">
         <h3 className="text-lg font-semibold mb-4 flex items-center">
           <Tag className="w-5 h-5 mr-2" />
           FILTER BY CATEGORY
@@ -113,7 +113,7 @@ export function HomeRightSidebar({
       </div>
 
       {/* Tags */}
-      <div>
+      <div className="px-2 sm:px-4">
         <h3 className="text-lg font-semibold mb-4 flex items-center">
           <Tag className="w-5 h-5 mr-2" />
           FILTER BY TAGS
@@ -163,7 +163,7 @@ export function ArchivesRightSidebar({
     <div>
       {/* Clear Filters */}
       {hasActiveFilters && (
-        <div className="mb-6">
+        <div className="mb-6 px-2 sm:px-4">
           <Button
             variant="outline"
             size="sm"

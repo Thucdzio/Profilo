@@ -45,7 +45,7 @@ export default function ProjectDetailPage({
   }, [project.title]);
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl w-full mx-auto px-2 sm:px-4">
       <Button
         variant="ghost"
         onClick={onBack}
@@ -62,7 +62,7 @@ export default function ProjectDetailPage({
       <article
         className={`${
           isDarkMode ? "bg-gray-800" : "bg-gray-100"
-        } rounded-lg p-8`}
+        } rounded-lg p-4 sm:p-8`}
       >
         {/* Header */}
         <div className="mb-8">
@@ -171,7 +171,7 @@ export default function ProjectDetailPage({
             <p
               className={`${
                 isDarkMode ? "text-gray-300" : "text-gray-600"
-              } leading-relaxed text-lg`}
+              } leading-relaxed text-base sm:text-lg`}
             >
               {project.fullDescription}
             </p>
@@ -182,7 +182,7 @@ export default function ProjectDetailPage({
             <h2 className="text-2xl font-semibold mb-4 text-purple-400">
               🛠️ Technologies Used
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
               {project.technologies.map((tech) => (
                 <div
                   key={tech}
@@ -220,7 +220,7 @@ export default function ProjectDetailPage({
             <h2 className="text-2xl font-semibold mb-4 text-purple-400">
               🚀 Results & Impact
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
               {project.results.map((result, index) => (
                 <div
                   key={index}

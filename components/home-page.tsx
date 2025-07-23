@@ -30,9 +30,9 @@ export default function HomePage({
   );
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl w-full mx-auto px-2 sm:px-4">
       {/* Hero Banner */}
-      <div className="h-64 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-lg mb-8 relative overflow-hidden">
+      <div className="h-48 sm:h-64 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-lg mb-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-purple-600/20 to-orange-400/20"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -139,7 +139,7 @@ export default function HomePage({
                   isDarkMode
                     ? "bg-gray-800 hover:bg-gray-750"
                     : "bg-gray-100 hover:bg-gray-50"
-                } rounded-lg p-6 cursor-pointer transition-colors duration-200`}
+                } rounded-lg p-4 sm:p-6 cursor-pointer transition-colors duration-200`}
                 onClick={() => onProjectClick(project.id)}
               >
                 <Badge
@@ -158,20 +158,20 @@ export default function HomePage({
                   {project.category}
                 </Badge>
 
-                <h3 className="text-xl font-bold mb-3 hover:text-purple-400 transition-colors">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 hover:text-purple-400 transition-colors">
                   {project.title}
                 </h3>
 
                 <p
                   className={`${
                     isDarkMode ? "text-gray-300" : "text-gray-600"
-                  } mb-4 leading-relaxed`}
+                  } mb-2 sm:mb-4 leading-relaxed`}
                 >
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-2 sm:mb-4">
                   {project.tags.slice(0, 4).map((tag) => (
                     <Badge
                       key={tag}

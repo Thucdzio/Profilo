@@ -56,11 +56,11 @@ export default function ArchivesPage({
   };
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl w-full mx-auto px-2 sm:px-4">
       <div
         className={`${
           isDarkMode ? "bg-gray-800" : "bg-gray-100"
-        } rounded-lg p-8`}
+        } rounded-lg p-4 sm:p-8`}
       >
         <h1 className="text-3xl font-bold mb-6">Project Archives</h1>
 
@@ -149,27 +149,27 @@ export default function ArchivesPage({
                       key={project.id}
                       className={`border-l-4 ${getCategoryColor(
                         project.category
-                      )} pl-4 cursor-pointer hover:bg-gray-700/20 p-3 rounded-r-lg transition-colors`}
+                      )} pl-2 sm:pl-4 cursor-pointer hover:bg-gray-700/20 p-2 sm:p-3 rounded-r-lg transition-colors`}
                       onClick={() => onProjectClick(project.id)}
                     >
-                      <h3 className="font-semibold mb-2 hover:text-purple-400 transition-colors">
+                      <h3 className="font-semibold mb-1 sm:mb-2 hover:text-purple-400 transition-colors">
                         {project.title}
                       </h3>
                       <p
                         className={`${
                           isDarkMode ? "text-gray-400" : "text-gray-500"
-                        } text-sm mb-2`}
+                        } text-xs sm:text-sm mb-1 sm:mb-2`}
                       >
                         {project.date} {project.category}
                       </p>
                       <p
                         className={`${
                           isDarkMode ? "text-gray-300" : "text-gray-600"
-                        } mb-2`}
+                        } mb-1 sm:mb-2`}
                       >
                         {project.description}
                       </p>
-                      <div className="flex flex-wrap gap-1 mt-2">
+                      <div className="flex flex-wrap gap-1 mt-1 sm:mt-2">
                         {project.tags.slice(0, 5).map((tag) => (
                           <span
                             key={tag}
