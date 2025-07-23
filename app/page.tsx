@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import {
   Home,
   Archive,
@@ -32,7 +32,6 @@ import {
 } from "@/components/right-sidebars";
 
 export default function PersonalPortfolio() {
-  const router = useRouter();
   const searchParams = useSearchParams();
 
   const [currentPage, setCurrentPage] = useState("home");
@@ -116,7 +115,7 @@ export default function PersonalPortfolio() {
     try {
       // First try to download pre-generated PDF
       await downloadPreGeneratedCV();
-    } catch (error) {
+    } catch {
       console.log("Pre-generated PDF not available, generating new one...");
 
       try {
