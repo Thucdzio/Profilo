@@ -511,7 +511,7 @@ PROGRAMMING SKILLS
 
         {/* Right Sidebar - Hidden scrollbar */}
         <div
-          className={`w-80 ${
+          className={`hidden md:block w-80 ${
             isDarkMode ? "bg-gray-800" : "bg-gray-50"
           } h-screen fixed right-0 top-0 overflow-y-auto scrollbar-hide`}
           style={{
