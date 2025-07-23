@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-<link rel="icon" href="/profile.jpg" />;
+
 export const metadata: Metadata = {
   title: "Le Tien Thuc - Portfolio",
   description:
@@ -35,6 +35,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://ltthuc.id.vn/profile.jpg" />
         <meta property="og:url" content="https://ltthuc.id.vn" />
         <meta property="og:type" content="website" />
+        <link rel="icon" href="/profile.jpg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
