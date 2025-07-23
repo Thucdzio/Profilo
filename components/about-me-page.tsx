@@ -63,7 +63,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                     isDarkMode ? "text-gray-300" : "text-gray-600"
                   } text-sm`}
                 >
-                  Building modern web applications with React, Stringboot, and
+                  Building modern web applications with React, Spring Boot, and
                   various databases. I enjoy creating seamless user experiences
                   backed by robust server-side architecture.
                 </p>
@@ -74,7 +74,7 @@ export default function AboutMePage({ isDarkMode }: AboutMePageProps) {
                 } p-4 rounded-lg w-full`}
               >
                 <h3 className="font-semibold mb-2 text-base sm:text-lg">
-                  Linux System Administration
+                  Linux & Git
                 </h3>
                 <p
                   className={`${
