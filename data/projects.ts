@@ -158,6 +158,42 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Thucdzio/Game/tree/master",
     demoUrl: "https://user-images.githubusercontent.com/124569106/236681159-2b430b7e-d064-4a39-8669-56ce9a3c519f.png",
   },
+  {
+    id: "cv-website",
+    title: "Personal CV Website – Portfolio Site ",
+    category: "Web Application",
+    description:
+      "A modern and responsive personal portfolio/CV website built using Next.js 15, showcasing skills, projects, and contact information with Docker deployment support.",
+    fullDescription:
+      "This personal CV website is developed using Next.js 15, TypeScript, and Tailwind CSS. It features a clean, responsive layout for showcasing a developer's background, projects, and resume. The app supports optimized image loading, Dockerized deployment, and can be easily hosted on container registries or cloud platforms.",
+    date: "Aug 6, 2025",
+    readTime: "2 minute read",
+    tags: ["Portfolio", "Next.js", "Web","Docker","Harbor","Vercel"],
+    technologies: [
+      "Next.js 15",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Docker",
+      "Harbor",
+      "Vercel"
+    ],
+    features: [
+      "Full resume/CV layout with project and experience sections",
+      "Responsive and mobile-friendly design",
+      "Optimized image loading from GitHub and external sources",
+      "Multi-stage production-ready Dockerfile",
+      "Deployable to container registry or any cloud platform"
+    ],
+    results: [
+      "Built and deployed a fully functional CV website using modern web stack",
+      "Successfully pushed Docker image to personal registry: registry.ltthuc.id.vn",
+      "Enabled easy and fast deployment using Docker container",
+      "Optimized performance and UI for both desktop and mobile users"
+    ],
+    githubUrl: "https://github.com/Thucdzio/Profilo", 
+    demoUrl: "https://ltthuc.id.vn" 
+  }  
 ]
 
 export function getProjectById(id: string): Project | undefined {
