@@ -255,7 +255,7 @@ export default function PersonalPortfolio() {
           <div className="flex flex-col items-center mb-8">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
               <Image
-                src="/profile.jpg"
+                src="/photo.jpg"
                 alt="Le Tien Thuc"
                 width={120}
                 height={120}

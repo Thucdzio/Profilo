@@ -193,7 +193,42 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Thucdzio/Profilo", 
     demoUrl: "https://ltthuc.id.vn" 
-  }  
+  },
+  {
+    "id": "california-house-price-prediction",
+    "title": "California House Price Prediction",
+    "category": "Machine Learning",
+    "description": "A project to predict median house values in California districts using various census metrics with machine learning models like Linear Regression and Random Forest.",
+    "fullDescription": "This project aims to build a Machine Learning model to predict median house values in California districts based on features like median income, house age, and population. The project covers the entire workflow from Exploratory Data Analysis (EDA) to Model Evaluation. The dataset used is the California Housing Dataset from the Scikit-Learn library.",
+    "date": "Dec 5, 2025",
+    "readTime": "5 minute read",
+    "tags": ["Machine Learning", "Data Science", "Python", "Scikit-Learn", "EDA", "Model Evaluation"],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "Seaborn",
+      "Matplotlib",
+      "Scikit-Learn",
+      "Linear Regression",
+      "Random Forest"
+    ],
+    "features": [
+      "Exploratory Data Analysis (EDA) to explore data distributions and relationships.",
+      "Correlation analysis to understand relationships between features and target variable.",
+      "Modeling with Linear Regression and Random Forest Regressor.",
+      "Model evaluation using R² Score and RMSE.",
+      "Visualizations including Heatmaps for feature correlation analysis."
+    ],
+    "results": [
+      "Linear Regression model as the baseline with R² of 0.60 and RMSE of 0.72.",
+      "Random Forest Regressor achieved the best performance with R² of 0.80 and RMSE of 0.50.",
+      "Identified multicollinearity between features like AveRooms and AveBedrms.",
+      "Successful deployment of models with visualizations and model comparison."
+    ],
+    "githubUrl": "https://github.com/Thucdzio/House_Prediction_ETE",
+    "demoUrl": "https://raw.githubusercontent.com/Thucdzio/House_Prediction_ETE/refs/heads/main/assets/heatmap.png",
+  }
 ]
 
 export function getProjectById(id: string): Project | undefined {
