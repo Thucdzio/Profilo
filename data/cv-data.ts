@@ -33,7 +33,7 @@ export const cvData: CVData = {
   education: {
     institution: "University of Engineering and Technology VNU, Hanoi",
     degree: "Bachelor of Science in Information Technology",
-    gpa: "3.22",
+    gpa: "3.25",
     duration: "Oct. 2022 – Present",
   },
   projects: [

@@ -228,6 +228,74 @@ export const projects: Project[] = [
     ],
     "githubUrl": "https://github.com/Thucdzio/House_Prediction_ETE",
     "demoUrl": "https://raw.githubusercontent.com/Thucdzio/House_Prediction_ETE/refs/heads/main/assets/heatmap.png",
+  },
+  {
+    "id": "cv-explorer-rag-assistant",
+    "title": "CV Explorer GPT - Advanced RAG System",
+    "category": "Artificial Intelligence / NLP",
+    "description": "An intelligent recruitment assistant using Advanced RAG with Small2Big strategies and Semantic Section Splitting for precise CV analysis.",
+    "fullDescription": "Developed a full-stack Retrieval-Augmented Generation (RAG) system to solve context-loss issues in long document processing (CVs). The system features a modular architecture that separates text processing logic, vector storage, and the user interface. By implementing Parent Document Retrieval, the project achieves a superior balance between granular search precision and comprehensive context for LLM reasoning.",
+    "date": "Dec 31, 2025",
+    "readTime": "7 minute read",
+    "tags": ["GenAI", "RAG", "LangChain", "Python", "VectorDB", "LLM"],
+    "technologies": [
+      "Python",
+      "LangChain (LCEL)",
+      "Google Gemini 1.5 Flash",
+      "ChromaDB",
+      "Streamlit",
+      "PyPDF",
+      "Regular Expressions (Regex)"
+    ],
+    "features": [
+      "Semantic Section Splitting: Automated CV parsing into logical sections (Skills, Experience, Education) using Regex.",
+      "Small2Big Retrieval: Implemented Parent Document Retrieval to maintain rich context for LLM generation.",
+      "Search Optimization: Integrated MMR (Maximal Marginal Relevance) and Query Rewriting for high-precision retrieval.",
+      "Interactive Chat Interface: Streamlit-based UI featuring full chat history and direct PDF source citations.",
+      "Modular Architecture: Clean codebase with strict separation between the core engine and UI layers."
+    ],
+    "results": [
+      "Significantly improved answer accuracy by maintaining semantic context within specific CV sections.",
+      "Minimized hallucinations through a robust verification mechanism grounded in direct PDF source data.",
+      "Established a stable local environment capable of processing multiple candidate profiles simultaneously.",
+      "Highly scalable design allowing easy migration to alternative LLMs or Vector Databases."
+    ],
+    "githubUrl": "https://github.com/Thucdzio/RAG_SYSTEM",
+    "demoUrl": "https://private-user-images.githubusercontent.com/124569106/531254827-94457e19-5713-40f1-a7f6-8faa6f7dee9b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjcxOTg5MTksIm5iZiI6MTc2NzE5ODYxOSwicGF0aCI6Ii8xMjQ1NjkxMDYvNTMxMjU0ODI3LTk0NDU3ZTE5LTU3MTMtNDBmMS1hN2Y2LThmYWE2ZjdkZWU5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIzMVQxNjMwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYjE2ZWVlZGIxZGUyNWJiOGNmOGU1YjlmZjc0OGQ2MzM5ZjY0OWVhNTc1OTlmMDcwYzAyMDlhZTM5M2JjMWI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jqg5SV_fQhBm4zIFhgQGB0fY3MO7QyTc9LaszvnKS6Q"
+  },
+  {
+    "id": "peptide-rt-transformer",
+    "title": "Peptide Retention Time Prediction via Transformer",
+    "category": "Deep Learning / Bioinformatics",
+    "description": "A Transformer-based deep learning model designed to predict peptide retention time (RT) in liquid chromatography with high precision.",
+    "fullDescription": "This project leverages the Transformer architecture's self-attention mechanism to model long-range dependencies in amino acid sequences. By treating peptides as sequences of tokens, the model learns complex physicochemical properties that influence retention time in LC-MS/MS experiments. This approach replaces traditional RNN/LSTM models, offering superior accuracy and faster training for large-scale proteomics data analysis.",
+    "date": "Dec 20, 2025",
+    "readTime": "6 minute read",
+    "tags": ["Deep Learning", "Transformer", "Bioinformatics", "Proteomics", "Python", "PyTorch"],
+    "technologies": [
+      "Python",
+      "PyTorch / TensorFlow",
+      "Transformer Architecture",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "Matplotlib"
+    ],
+    "features": [
+      "Peptide Encoding: Tokenization and Embedding of amino acid sequences into high-dimensional latent space.",
+      "Self-Attention Mechanism: Captures complex inter-residue interactions within peptide chains.",
+      "Sequence Pipeline: Robust pre-processing including padding, masking, and normalization for variable-length peptides.",
+      "Scalable Training: Optimized data loaders for handling massive proteomics datasets efficiently.",
+      "Hyperparameter Tuning: Extensive grid search for optimizing attention heads and layer depth."
+    ],
+    "results": [
+      "Achieved state-of-the-art performance with high R-squared and low Mean Absolute Error (MAE).",
+      "Successfully captured non-linear physicochemical relationships that linear models fail to detect.",
+      "Provided a scalable tool for automated peptide identification in high-throughput proteomics pipelines.",
+      "Reduced prediction error by significant margins compared to traditional sequence-based baselines."
+    ],
+    "githubUrl": "https://www.kaggle.com/code/lucasxyz/peptide-rt",
+    "demoUrl": "https://www.kaggle.com/code/lucasxyz/peptide-rt"
   }
 ]
 

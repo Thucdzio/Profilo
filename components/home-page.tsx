@@ -24,9 +24,16 @@ export default function HomePage({
   onClearFilters,
 }: HomePageProps) {
   // Get the latest projects for display (filtered or all)
-  const featuredProjects = filteredProjects.slice(
+  // Sort by date (newest first) before slicing
+  const sortedProjects = [...filteredProjects].sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA; // Descending order (newest first)
+  });
+
+  const featuredProjects = sortedProjects.slice(
     0,
-    hasActiveFilters ? filteredProjects.length : 3
+    hasActiveFilters ? sortedProjects.length : 3
   );
 
   return (

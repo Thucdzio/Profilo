@@ -110,7 +110,7 @@ export default function PersonalPortfolio() {
   };
 
   const handleDownloadCV = () => {
-    window.open("/cv/ThucResume-1.pdf", "_blank");
+    window.open("/cv/ThucResume.pdf", "_blank");
   };
 
   // Không render cho đến khi initialized để tránh flash
