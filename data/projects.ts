@@ -261,7 +261,7 @@ export const projects: Project[] = [
       "Highly scalable design allowing easy migration to alternative LLMs or Vector Databases."
     ],
     "githubUrl": "https://github.com/Thucdzio/RAG_SYSTEM",
-    "demoUrl": "https://private-user-images.githubusercontent.com/124569106/531254827-94457e19-5713-40f1-a7f6-8faa6f7dee9b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjcxOTg5MTksIm5iZiI6MTc2NzE5ODYxOSwicGF0aCI6Ii8xMjQ1NjkxMDYvNTMxMjU0ODI3LTk0NDU3ZTE5LTU3MTMtNDBmMS1hN2Y2LThmYWE2ZjdkZWU5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIzMVQxNjMwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYjE2ZWVlZGIxZGUyNWJiOGNmOGU1YjlmZjc0OGQ2MzM5ZjY0OWVhNTc1OTlmMDcwYzAyMDlhZTM5M2JjMWI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jqg5SV_fQhBm4zIFhgQGB0fY3MO7QyTc9LaszvnKS6Q"
+    "demoUrl": "/rag_cv.png",
   },
   {
     "id": "peptide-rt-transformer",
