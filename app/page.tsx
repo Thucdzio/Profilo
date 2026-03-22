@@ -378,8 +378,8 @@ export default function PersonalPortfolio() {
                     ? "text-white bg-gray-600 border border-gray-500"
                     : "text-gray-900 bg-gray-200 border border-gray-300 shadow-sm"
                   : isDarkMode
-                  ? "text-gray-300 hover:text-white hover:bg-gray-700"
-                  : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    ? "text-gray-300 hover:text-white hover:bg-gray-700"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
               }`}
               onClick={() => handlePageChange("home")}
             >
@@ -396,8 +396,8 @@ export default function PersonalPortfolio() {
                     ? "text-white bg-gray-600 border border-gray-500"
                     : "text-gray-900 bg-gray-200 border border-gray-300 shadow-sm"
                   : isDarkMode
-                  ? "text-gray-300 hover:text-white hover:bg-gray-700"
-                  : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    ? "text-gray-300 hover:text-white hover:bg-gray-700"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
               }`}
               onClick={() => handlePageChange("archives")}
             >
@@ -413,8 +413,8 @@ export default function PersonalPortfolio() {
                     ? "text-white bg-gray-600 border border-gray-500"
                     : "text-gray-900 bg-gray-200 border border-gray-300 shadow-sm"
                   : isDarkMode
-                  ? "text-gray-300 hover:text-white hover:bg-gray-700"
-                  : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    ? "text-gray-300 hover:text-white hover:bg-gray-700"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
               }`}
               onClick={() => handlePageChange("about")}
             >
@@ -430,8 +430,8 @@ export default function PersonalPortfolio() {
                     ? "text-white bg-gray-600 border border-gray-500"
                     : "text-gray-900 bg-gray-200 border border-gray-300 shadow-sm"
                   : isDarkMode
-                  ? "text-gray-300 hover:text-white hover:bg-gray-700"
-                  : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    ? "text-gray-300 hover:text-white hover:bg-gray-700"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
               }`}
               onClick={() => handlePageChange("journey")}
             >
